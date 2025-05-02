@@ -1,0 +1,470 @@
+[
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/user_controller",
+            "UserController",
+            7,
+            30,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/user_service",
+            "UserService",
+            10,
+            28,
+            null
+        ],
+        "execution_time": 10,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/user_service",
+            "UserService",
+            10,
+            28,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/tmp",
+            "testcase",
+            4,
+            6,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/product_controller",
+            "ProductController",
+            7,
+            30,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/product_service",
+            "ProductService",
+            10,
+            28,
+            null
+        ],
+        "execution_time": 10,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/product_service",
+            "ProductService",
+            10,
+            28,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/tmp",
+            "testcase",
+            4,
+            6,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/order_controller",
+            "OrderController",
+            12,
+            35,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/order_service",
+            "OrderService",
+            10,
+            29,
+            null
+        ],
+        "execution_time": 11,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/order_service",
+            "OrderService",
+            10,
+            29,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/tmp",
+            "testcase",
+            4,
+            6,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/order_controller",
+            "OrderController",
+            12,
+            35,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/order_service",
+            "OrderService",
+            10,
+            29,
+            null
+        ],
+        "execution_time": 8,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/order_service",
+            "OrderService",
+            10,
+            29,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/tmp",
+            "testcase",
+            4,
+            6,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/product_controller",
+            "ProductController",
+            7,
+            30,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/product_service",
+            "ProductService",
+            10,
+            28,
+            null
+        ],
+        "execution_time": 9,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/user_controller",
+            "UserController",
+            7,
+            30,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/user_service",
+            "UserService",
+            10,
+            28,
+            null
+        ],
+        "execution_time": 9,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/user_controller",
+            "UserController",
+            7,
+            30,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/user_service",
+            "UserService",
+            10,
+            28,
+            null
+        ],
+        "execution_time": 11,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/user_service",
+            "UserService",
+            10,
+            28,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/tmp",
+            "testcase",
+            4,
+            6,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/product_controller",
+            "ProductController",
+            7,
+            30,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/product_service",
+            "ProductService",
+            10,
+            28,
+            null
+        ],
+        "execution_time": 10,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/product_service",
+            "ProductService",
+            10,
+            28,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/tmp",
+            "testcase",
+            4,
+            6,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/order_controller",
+            "OrderController",
+            12,
+            35,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/order_service",
+            "OrderService",
+            10,
+            29,
+            null
+        ],
+        "execution_time": 12,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/order_service",
+            "OrderService",
+            10,
+            29,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/tmp",
+            "testcase",
+            4,
+            6,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/order_controller",
+            "OrderController",
+            12,
+            35,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/order_service",
+            "OrderService",
+            10,
+            29,
+            null
+        ],
+        "execution_time": 11,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/order_service",
+            "OrderService",
+            10,
+            29,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/tmp",
+            "testcase",
+            4,
+            6,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/product_controller",
+            "ProductController",
+            7,
+            30,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/product_service",
+            "ProductService",
+            10,
+            28,
+            null
+        ],
+        "execution_time": 10,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/user_controller",
+            "UserController",
+            7,
+            30,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/user_service",
+            "UserService",
+            10,
+            28,
+            null
+        ],
+        "execution_time": 12,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/order_controller",
+            "OrderController",
+            12,
+            35,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/order_service",
+            "OrderService",
+            10,
+            29,
+            null
+        ],
+        "execution_time": 40,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/order_service",
+            "OrderService",
+            10,
+            29,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/models/order_model",
+            "Order",
+            7,
+            28,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/product_controller",
+            "ProductController",
+            7,
+            30,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/product_service",
+            "ProductService",
+            10,
+            28,
+            null
+        ],
+        "execution_time": 37,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/product_service",
+            "ProductService",
+            10,
+            28,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/models/product_model",
+            "Product",
+            7,
+            27,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/controllers/user_controller",
+            "UserController",
+            7,
+            30,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/services/user_service",
+            "UserService",
+            10,
+            28,
+            null
+        ],
+        "execution_time": 44,
+        "call_count": 1
+    },
+    {
+        "caller_tuple": [
+            "examples/flask_demo/services/user_service",
+            "UserService",
+            10,
+            28,
+            null
+        ],
+        "called_tuple": [
+            "examples/flask_demo/models/user_model",
+            "User",
+            6,
+            22,
+            null
+        ],
+        "execution_time": 0,
+        "call_count": 1
+    }
+]
