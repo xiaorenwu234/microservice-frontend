@@ -1,5 +1,5 @@
 <template>
-  <v-chart :option="chartOption" autoresize style="width: 100%; height: 100vh" />
+  <v-chart :option="chartOption" autoresize style="width: 7000px; height: 5000px" />
 </template>
 
 <script setup>
@@ -266,7 +266,7 @@ function buildChart() {
   const padding = 20
 
   const isCircleOverlapping = (cx, cy, r) =>
-      placedCircles.some((c) => Math.sqrt((c.cx - cx) ** 2 + (c.cy - cy) ** 2) < c.r + r + padding)
+    placedCircles.some((c) => Math.sqrt((c.cx - cx) ** 2 + (c.cy - cy) ** 2) < c.r + r + padding)
 
   keys.forEach((label) => {
     const funcs = grouped[label]
@@ -274,8 +274,8 @@ function buildChart() {
     const r = Math.max(50, Math.min(200, 20 + Math.sqrt(funcCount) * 60))
 
     let cx,
-        cy,
-        attempt = 0
+      cy,
+      attempt = 0
     do {
       cx = Math.random() * 1000 + r
       cy = Math.random() * 600 + r
@@ -303,7 +303,7 @@ function buildChart() {
     })
 
     funcs.forEach((f, i) => {
-      const angle = ((2 * Math.PI) / funcs.length) * i
+      const angle = ((2 * Math.PI) / funcs.length) * i+50
       const pr = r * 0.7
       const px = cx + pr * Math.cos(angle)
       const py = cy + pr * Math.sin(angle)
@@ -365,7 +365,7 @@ function buildChart() {
           const dx = e.event.offsetX
           const dy = e.event.offsetY
           const inside = placedCircles.find(
-              (c) => Math.sqrt((dx - c.cx) ** 2 + (dy - c.cy) ** 2) < c.r,
+            (c) => Math.sqrt((dx - c.cx) ** 2 + (dy - c.cy) ** 2) < c.r,
           )
 
           const keys = Object.values(labelByCircle)
@@ -410,13 +410,13 @@ function buildChart() {
 
             // 删除 placedCircles
             const pcIndex = placedCircles.findIndex(
-                (item) => item.cx === c.cx && item.cy === c.cy && item.r === c.r,
+              (item) => item.cx === c.cx && item.cy === c.cy && item.r === c.r,
             )
             if (pcIndex !== -1) placedCircles.splice(pcIndex, 1)
 
             // 删除 circle 图形
             const circleIndex = circles.findIndex(
-                (item) => item.shape?.cx === c.cx && item.shape?.cy === c.cy && item.shape?.r === c.r,
+              (item) => item.shape?.cx === c.cx && item.shape?.cy === c.cy && item.shape?.r === c.r,
             )
             if (circleIndex !== -1) circles.splice(circleIndex, 1)
 
