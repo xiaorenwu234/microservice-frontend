@@ -1,8 +1,5 @@
 <template>
   <v-chart :option="chartOption" autoresize style="width: 100%; height: 100vh" />
-  <!-- 在 Vue 模板中添加一个 tooltip 容器 -->
-  <!--  <div id="tooltip" style="position: absolute; display: none; background: rgba(0, 0, 0, 0.7); color: white; padding: 5px; border-radius: 5px;"></div>-->
-
 </template>
 
 <script setup>
@@ -17,625 +14,207 @@ use([CanvasRenderer, ScatterChart, TitleComponent, TooltipComponent, GraphicComp
 
 const rawData = ref([
   {
-    "func_name": "Config",
-    "file_path": "examples/flask_demo/config",
-    "lineno": 25,
-    "end_lineno": 28,
-    "docstring": null,
-    "execution_time": 0,
-    "count": 0,
-    "label": 4
+    "func_name": "com.example.demo.controller.UserController.registerUser(com.example.demo.model.User)",
+    "label": "0"
   },
   {
-    "func_name": "Product",
-    "file_path": "examples/flask_demo/models/product_model",
-    "lineno": 7,
-    "end_lineno": 27,
-    "docstring": null,
-    "execution_time": 0,
-    "count": 1,
-    "label": 5
+    "func_name": "com.example.demo.service.UserService.getUserByUsername(java.lang.String)",
+    "label": "0"
   },
   {
-    "func_name": "OrderService",
-    "file_path": "examples/flask_demo/services/order_service",
-    "lineno": 10,
-    "end_lineno": 29,
-    "docstring": null,
-    "execution_time": 82,
-    "count": 5,
-    "label": 0
+    "func_name": "com.example.demo.controller.UserController.getUserByUsername(java.lang.String)",
+    "label": "0"
   },
   {
-    "func_name": "main",
-    "file_path": "examples/flask_demo/app",
-    "lineno": 33,
-    "end_lineno": 37,
-    "docstring": null,
-    "execution_time": 25634,
-    "count": 2,
-    "label": 4
+    "func_name": "com.example.demo.service.UserService.getUserById(java.lang.Long)",
+    "label": "0"
   },
   {
-    "func_name": "UserController",
-    "file_path": "examples/flask_demo/controllers/user_controller",
-    "lineno": 7,
-    "end_lineno": 30,
-    "docstring": null,
-    "execution_time": 101,
-    "count": 5,
-    "label": 6
+    "func_name": "com.example.demo.controller.UserController.getUserById(java.lang.Long)",
+    "label": "0"
   },
   {
-    "func_name": "patch_trace",
-    "file_path": "examples/flask_demo/patch_trace",
-    "lineno": 10,
-    "end_lineno": 63,
-    "docstring": null,
-    "execution_time": 0,
-    "count": 0,
-    "label": 1
+    "func_name": "com.example.demo.service.UserService.registerUser(com.example.demo.model.User)",
+    "label": "0"
   },
   {
-    "func_name": "ProductController",
-    "file_path": "examples/flask_demo/controllers/product_controller",
-    "lineno": 7,
-    "end_lineno": 30,
-    "docstring": null,
-    "execution_time": 87,
-    "count": 5,
-    "label": 5
+    "func_name": "com.example.demo.controller.OrderController.createOrder(com.example.demo.model.Order)",
+    "label": "4"
   },
   {
-    "func_name": "User",
-    "file_path": "examples/flask_demo/models/user_model",
-    "lineno": 6,
-    "end_lineno": 22,
-    "docstring": null,
-    "execution_time": 0,
-    "count": 1,
-    "label": 6
+    "func_name": "com.example.demo.controller.OrderController.getOrderById(java.lang.Long)",
+    "label": "4"
   },
   {
-    "func_name": "testcase",
-    "file_path": "examples/flask_demo/tmp",
-    "lineno": 4,
-    "end_lineno": 6,
-    "docstring": null,
-    "execution_time": 0,
-    "count": 8,
-    "label": 0
+    "func_name": "com.example.demo.controller.OrderDetailController.addOrderDetail(com.example.demo.model.OrderDetail)",
+    "label": "4"
   },
   {
-    "func_name": "ProductService",
-    "file_path": "examples/flask_demo/services/product_service",
-    "lineno": 10,
-    "end_lineno": 28,
-    "docstring": null,
-    "execution_time": 76,
-    "count": 5,
-    "label": 5
+    "func_name": "com.example.demo.service.OrderService.getPaymentRecordByOrderId(java.lang.Long)",
+    "label": "4"
   },
   {
-    "func_name": "Weight",
-    "file_path": "examples/flask_demo/controllers/order_controller",
-    "lineno": 8,
-    "end_lineno": 9,
-    "docstring": null,
-    "execution_time": 0,
-    "count": 0,
-    "label": 3
+    "func_name": "com.example.demo.service.OrderDetailService.addOrderDetail(com.example.demo.model.OrderDetail)",
+    "label": "4"
   },
   {
-    "func_name": "OrderController",
-    "file_path": "examples/flask_demo/controllers/order_controller",
-    "lineno": 12,
-    "end_lineno": 35,
-    "docstring": null,
-    "execution_time": 93,
-    "count": 5,
-    "label": 0
+    "func_name": "com.example.demo.service.OrderService.createOrder(com.example.demo.model.Order)",
+    "label": "4"
   },
   {
-    "func_name": "DatabaseManager",
-    "file_path": "examples/flask_demo/utils/database",
-    "lineno": 7,
-    "end_lineno": 14,
-    "docstring": null,
-    "execution_time": 1,
-    "count": 2,
-    "label": 2
+    "func_name": "com.example.demo.service.OrderService.getOrderDetailsByOrderId(java.lang.Long)",
+    "label": "4"
   },
   {
-    "func_name": "Order",
-    "file_path": "examples/flask_demo/models/order_model",
-    "lineno": 7,
-    "end_lineno": 28,
-    "docstring": null,
-    "execution_time": 0,
-    "count": 1,
-    "label": 0
+    "func_name": "com.example.demo.service.OrderService.getOrderById(java.lang.Long)",
+    "label": "4"
   },
   {
-    "func_name": "UserService",
-    "file_path": "examples/flask_demo/services/user_service",
-    "lineno": 10,
-    "end_lineno": 28,
-    "docstring": null,
-    "execution_time": 86,
-    "count": 5,
-    "label": 6
+    "func_name": "com.example.demo.service.CategoryService.addCategory(com.example.demo.model.Category)",
+    "label": "2"
+  },
+  {
+    "func_name": "com.example.demo.service.CategoryService.getCategoryByName(java.lang.String)",
+    "label": "2"
+  },
+  {
+    "func_name": "com.example.demo.controller.CategoryController.getCategoryByName(java.lang.String)",
+    "label": "2"
+  },
+  {
+    "func_name": "com.example.demo.controller.CategoryController.addCategory(com.example.demo.model.Category)",
+    "label": "2"
+  },
+  {
+    "func_name": "com.example.demo.controller.ProductController.getProductById(java.lang.Long)",
+    "label": "3"
+  },
+  {
+    "func_name": "com.example.demo.service.ProductService.getProductByName(java.lang.String)",
+    "label": "3"
+  },
+  {
+    "func_name": "com.example.demo.controller.ProductController.getProductByName(java.lang.String)",
+    "label": "3"
+  },
+  {
+    "func_name": "com.example.demo.controller.ProductController.addProduct(com.example.demo.model.Product)",
+    "label": "3"
+  },
+  {
+    "func_name": "com.example.demo.service.ProductService.getProductById(java.lang.Long)",
+    "label": "3"
+  },
+  {
+    "func_name": "com.example.demo.service.ProductService.addProduct(com.example.demo.model.Product)",
+    "label": "3"
+  },
+  {
+    "func_name": "com.example.demo.service.PaymentRecordService.addPaymentRecord(com.example.demo.model.PaymentRecord)",
+    "label": "1"
+  },
+  {
+    "func_name": "com.example.demo.controller.PaymentRecordController.addPaymentRecord(com.example.demo.model.PaymentRecord)",
+    "label": "1"
   }
 ])
 
 const rawConnections = ref([
   {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/user_controller",
-      "UserController",
-      7,
-      30,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/user_service",
-      "UserService",
-      10,
-      28,
-      null
-    ],
-    "execution_time": 10,
-    "call_count": 1
+    "caller": "com.example.demo.controller.PaymentRecordController.addPaymentRecord(com.example.demo.model.PaymentRecord)",
+    "called": "com.example.demo.service.PaymentRecordService.addPaymentRecord(com.example.demo.model.PaymentRecord)",
+    "execution_time": 13,
+    "call_count": 2
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/services/user_service",
-      "UserService",
-      10,
-      28,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/tmp",
-      "testcase",
-      4,
-      6,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
+    "caller": "com.example.demo.controller.OrderDetailController.addOrderDetail(com.example.demo.model.OrderDetail)",
+    "called": "com.example.demo.service.OrderDetailService.addOrderDetail(com.example.demo.model.OrderDetail)",
+    "execution_time": 35,
+    "call_count": 4
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/product_controller",
-      "ProductController",
-      7,
-      30,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/product_service",
-      "ProductService",
-      10,
-      28,
-      null
-    ],
-    "execution_time": 10,
-    "call_count": 1
+    "caller": "com.example.demo.controller.OrderController.getOrderById(java.lang.Long)",
+    "called": "com.example.demo.service.OrderService.getOrderById(java.lang.Long)",
+    "execution_time": 74,
+    "call_count": 2
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/services/product_service",
-      "ProductService",
-      10,
-      28,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/tmp",
-      "testcase",
-      4,
-      6,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
+    "caller": "com.example.demo.service.OrderService.getOrderById(java.lang.Long)",
+    "called": "com.example.demo.service.OrderService.getOrderDetailsByOrderId(java.lang.Long)",
+    "execution_time": 29,
+    "call_count": 2
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/order_controller",
-      "OrderController",
-      12,
-      35,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/order_service",
-      "OrderService",
-      10,
-      29,
-      null
-    ],
+    "caller": "com.example.demo.service.OrderService.getOrderById(java.lang.Long)",
+    "called": "com.example.demo.service.OrderService.getPaymentRecordByOrderId(java.lang.Long)",
+    "execution_time": 15,
+    "call_count": 2
+  },
+  {
+    "caller": "com.example.demo.controller.OrderController.createOrder(com.example.demo.model.Order)",
+    "called": "com.example.demo.service.OrderService.createOrder(com.example.demo.model.Order)",
+    "execution_time": 85,
+    "call_count": 2
+  },
+  {
+    "caller": "com.example.demo.service.OrderService.createOrder(com.example.demo.model.Order)",
+    "called": "com.example.demo.service.UserService.getUserById(java.lang.Long)",
     "execution_time": 11,
-    "call_count": 1
+    "call_count": 2
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/services/order_service",
-      "OrderService",
-      10,
-      29,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/tmp",
-      "testcase",
-      4,
-      6,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
+    "caller": "com.example.demo.service.OrderService.createOrder(com.example.demo.model.Order)",
+    "called": "com.example.demo.service.ProductService.getProductById(java.lang.Long)",
+    "execution_time": 17,
+    "call_count": 2
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/order_controller",
-      "OrderController",
-      12,
-      35,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/order_service",
-      "OrderService",
-      10,
-      29,
-      null
-    ],
-    "execution_time": 8,
-    "call_count": 1
+    "caller": "com.example.demo.controller.ProductController.getProductById(java.lang.Long)",
+    "called": "com.example.demo.service.ProductService.getProductById(java.lang.Long)",
+    "execution_time": 88,
+    "call_count": 8
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/services/order_service",
-      "OrderService",
-      10,
-      29,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/tmp",
-      "testcase",
-      4,
-      6,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
+    "caller": "com.example.demo.controller.ProductController.getProductByName(java.lang.String)",
+    "called": "com.example.demo.service.ProductService.getProductByName(java.lang.String)",
+    "execution_time": 166,
+    "call_count": 8
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/product_controller",
-      "ProductController",
-      7,
-      30,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/product_service",
-      "ProductService",
-      10,
-      28,
-      null
-    ],
-    "execution_time": 9,
-    "call_count": 1
+    "caller": "com.example.demo.controller.CategoryController.getCategoryByName(java.lang.String)",
+    "called": "com.example.demo.service.CategoryService.getCategoryByName(java.lang.String)",
+    "execution_time": 87,
+    "call_count": 4
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/user_controller",
-      "UserController",
-      7,
-      30,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/user_service",
-      "UserService",
-      10,
-      28,
-      null
-    ],
-    "execution_time": 9,
-    "call_count": 1
+    "caller": "com.example.demo.controller.ProductController.addProduct(com.example.demo.model.Product)",
+    "called": "com.example.demo.service.ProductService.addProduct(com.example.demo.model.Product)",
+    "execution_time": 97,
+    "call_count": 10
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/user_controller",
-      "UserController",
-      7,
-      30,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/user_service",
-      "UserService",
-      10,
-      28,
-      null
-    ],
-    "execution_time": 11,
-    "call_count": 1
+    "caller": "com.example.demo.controller.CategoryController.addCategory(com.example.demo.model.Category)",
+    "called": "com.example.demo.service.CategoryService.addCategory(com.example.demo.model.Category)",
+    "execution_time": 64,
+    "call_count": 7
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/services/user_service",
-      "UserService",
-      10,
-      28,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/tmp",
-      "testcase",
-      4,
-      6,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
+    "caller": "com.example.demo.controller.UserController.getUserById(java.lang.Long)",
+    "called": "com.example.demo.service.UserService.getUserById(java.lang.Long)",
+    "execution_time": 46,
+    "call_count": 8
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/product_controller",
-      "ProductController",
-      7,
-      30,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/product_service",
-      "ProductService",
-      10,
-      28,
-      null
-    ],
-    "execution_time": 10,
-    "call_count": 1
+    "caller": "com.example.demo.controller.UserController.getUserByUsername(java.lang.String)",
+    "called": "com.example.demo.service.UserService.getUserByUsername(java.lang.String)",
+    "execution_time": 343,
+    "call_count": 8
   },
   {
-    "caller_tuple": [
-      "examples/flask_demo/services/product_service",
-      "ProductService",
-      10,
-      28,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/tmp",
-      "testcase",
-      4,
-      6,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/order_controller",
-      "OrderController",
-      12,
-      35,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/order_service",
-      "OrderService",
-      10,
-      29,
-      null
-    ],
-    "execution_time": 12,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/services/order_service",
-      "OrderService",
-      10,
-      29,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/tmp",
-      "testcase",
-      4,
-      6,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/order_controller",
-      "OrderController",
-      12,
-      35,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/order_service",
-      "OrderService",
-      10,
-      29,
-      null
-    ],
-    "execution_time": 11,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/services/order_service",
-      "OrderService",
-      10,
-      29,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/tmp",
-      "testcase",
-      4,
-      6,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/product_controller",
-      "ProductController",
-      7,
-      30,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/product_service",
-      "ProductService",
-      10,
-      28,
-      null
-    ],
-    "execution_time": 10,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/user_controller",
-      "UserController",
-      7,
-      30,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/user_service",
-      "UserService",
-      10,
-      28,
-      null
-    ],
-    "execution_time": 12,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/order_controller",
-      "OrderController",
-      12,
-      35,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/order_service",
-      "OrderService",
-      10,
-      29,
-      null
-    ],
-    "execution_time": 40,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/services/order_service",
-      "OrderService",
-      10,
-      29,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/models/order_model",
-      "Order",
-      7,
-      28,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/product_controller",
-      "ProductController",
-      7,
-      30,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/product_service",
-      "ProductService",
-      10,
-      28,
-      null
-    ],
-    "execution_time": 37,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/services/product_service",
-      "ProductService",
-      10,
-      28,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/models/product_model",
-      "Product",
-      7,
-      27,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/controllers/user_controller",
-      "UserController",
-      7,
-      30,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/services/user_service",
-      "UserService",
-      10,
-      28,
-      null
-    ],
-    "execution_time": 44,
-    "call_count": 1
-  },
-  {
-    "caller_tuple": [
-      "examples/flask_demo/services/user_service",
-      "UserService",
-      10,
-      28,
-      null
-    ],
-    "called_tuple": [
-      "examples/flask_demo/models/user_model",
-      "User",
-      6,
-      22,
-      null
-    ],
-    "execution_time": 0,
-    "call_count": 1
+    "caller": "com.example.demo.controller.UserController.registerUser(com.example.demo.model.User)",
+    "called": "com.example.demo.service.UserService.registerUser(com.example.demo.model.User)",
+    "execution_time": 68,
+    "call_count": 9
   }
 ])
 
@@ -668,11 +247,11 @@ function buildChart() {
   }, {})
 
   const mergedConnections = rawConnections.value.reduce((acc, cur) => {
-    const key = `${cur.caller_tuple[1]}->${cur.called_tuple[1]}`
+    const key = `${cur.caller}->${cur.called}`
     if (!acc[key]) {
       acc[key] = {
-        caller_func: cur.caller_tuple[1],
-        called_func: cur.called_tuple[1],
+        caller_func: cur.caller,
+        called_func: cur.called,
         call_count: cur.call_count,
         execution_time: cur.execution_time,
       }
@@ -728,7 +307,7 @@ function buildChart() {
       const pr = r * 0.7
       const px = cx + pr * Math.cos(angle)
       const py = cy + pr * Math.sin(angle)
-      const radius = Math.max(8, f.count * 4)
+      const radius = 8
       const color = labelColors[f.label % labelColors.length]
 
       funcCoords[f.func_name] = { x: px, y: py }
@@ -746,7 +325,7 @@ function buildChart() {
             // 添加 onmouseover 和 onmouseout 事件来显示和隐藏 tooltip
             onmouseover: () => {
               // 显示 tooltip，并传递当前点的位置（px, py）
-              showTooltip(f.func_name, f.file_path, f.lineno, f.end_lineno, f.execution_time, f.count, px, py)
+              showTooltip(f.func_name, px, py)
             },
             onmouseout: () => {
               // 隐藏 tooltip
@@ -867,17 +446,13 @@ function buildChart() {
     })
 
     // 显示工具提示
-    function showTooltip(func_name, file_path, lineno, end_lineno, execution_time, count, x, y) {
+    function showTooltip(func_name,x, y) {
       const tooltip = document.getElementById('tooltip');
       tooltip.style.left = `${x + 15}px`; // 偏移一定距离，以避免覆盖图形
       tooltip.style.top = `${y + 15}px`;
       tooltip.style.display = 'block';
       tooltip.innerHTML = `
     <b>${func_name}</b><br/>
-    文件: ${file_path}<br/>
-    行: ${lineno}-${end_lineno}<br/>
-    时间: ${execution_time}ms<br/>
-    次数: ${count}
   `;
     }
 
